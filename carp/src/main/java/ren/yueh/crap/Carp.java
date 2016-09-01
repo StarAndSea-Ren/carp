@@ -24,7 +24,8 @@ public class Carp {
     private CarpContext carpCxt = null;
 
     public Carp(Context context) {
-        carpCxt = new CarpContext(context);
+//        carpCxt = new CarpContext(context);
+        this(context,new CarpContext(context));
     }
 
     public Carp(Context context, CarpContext carpCxt) {

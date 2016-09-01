@@ -2,6 +2,7 @@ package ren.yueh.crap;
 
 /**
  * Created by yueh on 2016/7/17.
+ * 定义了待解析html元素的属性信息
  */
 public class HtmlItem {
     /**
@@ -20,15 +21,11 @@ public class HtmlItem {
     private String attrValue;
 
     public HtmlItem(String tag) {
-        this.tag = tag;
-        this.attrKey = "";
-        this.attrValue = "";
+        this(tag, "");
     }
 
     public HtmlItem(String tag, String attrKey) {
-        this.tag = tag;
-        this.attrKey = attrKey;
-        this.attrValue = "";
+        this(tag, attrKey, "");
     }
 
     public HtmlItem(String tag, String attrKey, String attrValue) {
